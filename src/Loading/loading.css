@@ -1,0 +1,161 @@
+.Battement{
+    width: 450px !important;
+    height: 7rem !important;
+    position: relative;
+    top: 13rem;
+    
+}
+.Loading{
+    width: 100%;
+    overflow: hidden;
+}
+
+.worde {
+    overflow: hidden;
+    animation: reveal 1s forwards;
+  }
+  
+
+  @keyframes reveal {
+    0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+  }
+  
+  .image {
+    width: 100px;
+    height: 25rem;
+    background-image: url("./battement\ .svg");
+    /*animation-name: animImage;
+    animation-duration: 5s;*/
+    animation: animImage 5s forwards;
+    object-fit: cover;
+    position: relative;
+    top: 20rem;
+    left: 35%;
+    opacity: 0;
+  }
+  
+  @keyframes animImage {
+    0% { background-position: 0 400px; width: 200px; opacity: 0;}
+    15% { background-position: -200px 400px; width: 400px; opacity: 1;}
+    30% { background-position: -400px 400px; width: 600px;opacity: 0; }
+    50% { background-position: -600px 400px; width: 800px;opacity: 3;}
+    65% { background-position: -800px 400px; width: 400px;opacity: 0;}
+    80% { background-position: -800px 400px; width: 200px;opacity: 3;}
+    100% { background-position: -800px 400px; width: 400px;opacity: 0;}
+  }
+
+  .image1 {
+    opacity: 0;
+    width: 600px !important;
+    
+    animation: fadeIn 5s step-end;
+    position: relative;
+    top: 13rem;
+  }
+  
+  @keyframes fadeIn {
+    /*from {
+      opacity: 0;
+      width: 0;
+    }
+    to {
+      opacity: 1;
+      width: 450px;
+    }*/
+    0% {
+        opacity: 0;
+      width: 0;
+      }
+      20%{
+        opacity: 1;
+      width: 100px !important ;
+      }
+      40%{
+        opacity: 0;
+      width: 200px !important;
+      }
+      60%{
+        opacity: 2;
+      width: 300px !important;
+      }
+      80%{
+        opacity: 0;
+      width: 400px !important;
+      }
+      100% {
+        opacity: 3;
+      width: 600px !important;
+      
+      }
+  }
+  .Quote-position{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    left: 22%;
+  }
+  .Quote{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    
+    white-space: nowrap;
+    color : rgb(65, 92, 214);
+    /*position: relative;
+    
+    left: 30%;*/
+    overflow: hidden;
+    animation: typewriter 5s steps(100,end);
+    
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+        
+    }
+    to {
+      width: 100%;
+      
+    }
+  }
+
+  @keyframes reveal {
+    0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+  }
+
+  @keyframes defilement {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .Quote1{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    color : rgb(18, 27, 66);
+    overflow: hidden; 
+    margin-left: 12%;
+    /*margin-top: 10%;*/
+    animation: typewriter 5s steps(100, end);
+    
+  }
+  .HashLoader{
+    display: flex;
+    align-items: center;
+    margin-left: 24%;
+    height: 13rem;
+  }
