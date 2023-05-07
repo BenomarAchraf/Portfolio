@@ -1,9 +1,12 @@
 import React from 'react'
 import "./Navbar.css"
 const Navbar = () => {
+
+    
+
   return (
-    <div>
-        <header className='Header'>
+
+        <header className='header'>
             <a href='#' className='logo' >
                 B.Achraf
             </a>
@@ -17,7 +20,7 @@ const Navbar = () => {
             <a href='#contact' className='Contact' >Contact</a>
             </nav>
         </header>
-    </div>
+
   )
 }
 

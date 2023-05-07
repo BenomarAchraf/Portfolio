@@ -3,7 +3,7 @@ import "./About.css"
 import image from "../Assets/Images/CV-Achraf.png"
 const About = () => {
   return (
-    <div className='about' id='About'>
+    <section className='about' id='about'>
         <h2 className='Heading' >About <span className='Me'>Me</span></h2>
         <div className='About-img'>
             <img className='About-Image-Achraf-size' src={image} alt=''></img>
@@ -19,7 +19,7 @@ contribution to the projects I work on.</p>
                 <a href='#' className='btn'>Read More</a>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 
