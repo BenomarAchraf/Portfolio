@@ -9,7 +9,7 @@ import Skills from './Skills/Skills';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import DevSkills from './DevSkills/DevSkills';
-
+import Projects from './Projects/Projects';
 
 
 function App() {
@@ -36,6 +36,7 @@ function App() {
         <Education setNavbar={setNavbar}/>
         <DevSkills setNavbar={setNavbar} />
         <Contact setNavbar={setNavbar}/>
+        <Projects setNavbar={setNavbar}/>
         
         <Footer />
          </div>
