@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Navbar.css"
-const Navbar = () => {
+const Navbar = ({Nav}) => {
 
-    
+    let [clas, setClas]=useState(Nav);
+
+    useEffect(()=>{
+        setClas(Nav)
+    },[Nav])
 
   return (
 
@@ -12,12 +16,12 @@ const Navbar = () => {
             </a>
             <i class='bx bx-menu' id='menu-icon'></i>
             <nav className='navbar'>
-            <a href='#home' className='Home' >Home</a>
-            <a href='#about' className='About' >About</a>
-            <a href='#education' className='Education' >Education</a>
-            <a href='#skills' className='Skills' >Skills</a>
-            <a href='#project' className='Project' >Project</a>
-            <a href='#contact' className='Contact' >Contact</a>
+            <a href='#' className={clas==="Home"? "active" : ""} >Home</a>
+            <a href='#about' className={clas==="About"? "active" : ""} >About</a>
+            <a href='#education' className={clas==="Education"? "active" : ""} >Education</a>
+            <a href='#skills' className={clas==="Skills"? "active" : ""} >Skills</a>
+            <a href='#project' className={clas==="Project"? "active" : ""} >Project</a>
+            <a href='#contact' className={clas==="Contact"? "active" : ""} >Contact</a>
             </nav>
         </header>
 

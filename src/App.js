@@ -8,31 +8,16 @@ import Education from './Education/Education';
 import Skills from './Skills/Skills';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import DevSkills from './DevSkills/DevSkills';
+
+
+
 function App() {
 
-  let sections=document.querySelectorAll('section');
-  let navlinks = document.querySelectorAll('header nav a');
-
-  window.onscroll=()=>{
-    sections.forEach(sec=>{
-      let top= window.scrollY;
-      let offset= sec.offsetTop-100;
-      let height=sec.offsetHeight;
-      let id=sec.getAttribute('id');
-
-      if(top >= offset && top< offset+ height){
-        navlinks.forEach(links =>{
-            links.classList.remove('Home');
-            document.querySelector('header nav a[href*='+id+']').classList.add('Home')
-        })
-      }
-    })
-
-    let header=document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY>100)
-  }
-
+  
   const [loading ,setLoading]=useState(true)
+
+  const [Nav , setNavbar]=useState("Home");
 
   useEffect(()=>{
     setLoading(true);
@@ -45,12 +30,13 @@ function App() {
     <div >
       {
         loading? <Loading /> : <div className="App"> 
-        <Navbar />
-        <SectionH />
-        <About />
-        <Education />
-        <Skills />
-        <Contact />
+        <Navbar Nav={Nav}/>
+        <SectionH setNavbar={setNavbar}/>
+        <About setNavbar={setNavbar}/>
+        <Education setNavbar={setNavbar}/>
+        <DevSkills setNavbar={setNavbar} />
+        <Contact setNavbar={setNavbar}/>
+        
         <Footer />
          </div>
       } 

@@ -1,9 +1,12 @@
 import React from 'react'
 import "./SectionH.css"
 import image from "../Assets/Images/CV-Achraf.png"
-const SectionH = () => {
+const SectionH = ({setNavbar}) => {
   return (
-    <section className='SectionH' id='SectionH'>
+    <section className='SectionH' id='SectionH' onMouseEnter={()=>{
+        console.log("change");
+        setNavbar("Home")}} onMouseLeave={()=>
+            setNavbar("Home")}>
         <div className='home-content' >
             <h1>Hi, I'm <span>Benomar Achraf</span></h1>
             <div className='text-animated'>

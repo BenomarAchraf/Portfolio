@@ -1,9 +1,12 @@
 import React from 'react'
 import "./About.css"
 import image from "../Assets/Images/CV-Achraf.png"
-const About = () => {
+const About = ({setNavbar}) => {
   return (
-    <section className='about' id='about'>
+    <section className='about' onMouseEnter={()=>{
+        console.log("change");
+        setNavbar("About")}} onMouseLeave={()=>
+            setNavbar("Home")} id='about'>
         <h2 className='Heading' >About <span className='Me'>Me</span></h2>
         <div className='About-img'>
             <img className='About-Image-Achraf-size' src={image} alt=''></img>

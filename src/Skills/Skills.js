@@ -1,8 +1,11 @@
 import React from 'react'
 import "./Skills.css"
-const Skills = () => {
+const Skills = ({setNavbar}) => {
   return (
-    <section className='skills' id='skills'>
+    <section className='skills' id='skills'  onMouseEnter={()=>{
+        console.log("change");
+        setNavbar("Skills")}} onMouseLeave={()=>
+            setNavbar("Home")}>
         <h2 className='Heading'>My <span className='Me'>Skills</span> </h2>
 
         <div className='skills-row'>
