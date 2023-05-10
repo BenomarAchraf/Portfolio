@@ -19,7 +19,7 @@ innovative solutions using the latest technologies to provide exceptional user e
 motivated, enthusiastic, and constantly seeking new challenges to enhance my skills and make a significant
 contribution to the projects I work on.</p>
             <div className='btn-box btns'>
-                <a href='#' className='btn'>Read More</a>
+                <a href='https://linktr.ee/benomarachraf' className='btn'>Read More</a>
             </div>
         </div>
     </section>

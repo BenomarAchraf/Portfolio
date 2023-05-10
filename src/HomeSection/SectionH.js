@@ -15,21 +15,20 @@ const SectionH = ({setNavbar}) => {
                 </h3>
             </div>
             <p>
-            Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. 
-            </p>
+            Motivated until the last point, always striving for excellence and pushing beyond limits.</p>
             <div className='btn-box'>
-                <a href='#' className='btn'>Hire Me</a>
-                <a href='#' className='btn'>Let's Talk</a>
+                <a href='#about' className='btn'>About Me</a>
+                <a href='#contact' className='btn'>Let's Talk</a>
             </div>
         </div>
         <div className='home-rs'>
-            <a href='#' >
+            <a href='https://www.linkedin.com/in/achraf-benomar-291756241/' >
             <i class='bx bxl-linkedin'></i>
             </a>
-            <a href='#' >
+            <a href='https://www.instagram.com/achraf_benomar/' >
             <i class='bx bxl-instagram-alt' ></i>
             </a>
-            <a href='#' >
+            <a href='https://www.facebook.com/profile.php?id=100004415918795' >
             <i class='bx bxl-facebook'></i>
             </a>            
         </div>
