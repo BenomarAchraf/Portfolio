@@ -27,8 +27,8 @@ function App() {
   },[])
 
   return (
-    <div >
-      {
+  
+      
          <div className="App"> 
         <Navbar Nav={Nav}/>
         <SectionH setNavbar={setNavbar}/>
@@ -41,10 +41,10 @@ function App() {
         
         <Footer />
          </div>
-      } 
       
       
-    </div>
+      
+
   );
 }
 
