@@ -1,5 +1,6 @@
 import React , {useEffect , useState} from 'react'
 import './App.css';
+import Loading from './Loading/Loading';
 import Navbar from './Navbar/Navbar';
 import SectionH from './HomeSection/SectionH';
 import About from './About/About';
@@ -26,9 +27,9 @@ function App() {
   },[])
 
   return (
-  
-      
-         <div className="App"> 
+    <div >
+      {
+        loading? <Loading /> : <div className="App"> 
         <Navbar Nav={Nav}/>
         <SectionH setNavbar={setNavbar}/>
         <About setNavbar={setNavbar}/>
@@ -40,10 +41,10 @@ function App() {
         
         <Footer />
          </div>
+      } 
       
       
-      
-
+    </div>
   );
 }
 
