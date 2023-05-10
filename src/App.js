@@ -29,7 +29,7 @@ function App() {
   return (
     <div >
       {
-        loading? <Loading /> : <div className="App"> 
+         <div className="App"> 
         <Navbar Nav={Nav}/>
         <SectionH setNavbar={setNavbar}/>
         <About setNavbar={setNavbar}/>
