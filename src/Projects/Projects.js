@@ -6,9 +6,9 @@ const Projects = ({setNavbar}) => {
     
   return (
     <div className='Projet'>
-        <section className='Projet' id='projects'  onMouseEnter={()=>{
+        <section className='Projet' id='project'  onMouseEnter={()=>{
         console.log("change");
-        setNavbar("Skills")}} onMouseLeave={()=>
+        setNavbar("project")}} onMouseLeave={()=>
             setNavbar("Home")}>
         <h2 className='Heading'>My <span className='Me'>Projects</span> </h2>
 

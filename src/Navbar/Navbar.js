@@ -20,7 +20,7 @@ const Navbar = ({Nav}) => {
             <a href='#about' className={clas==="About"? "active" : ""} >About</a>
             <a href='#education' className={clas==="Education"? "active" : ""} >Education</a>
             <a href='#skills' className={clas==="Skills"? "active" : ""} >Skills</a>
-            <a href='#project' className={clas==="Project"? "active" : ""} >Project</a>
+            <a href='#project' className={clas==="project"? "active" : ""} >Project</a>
             <a href='#contact' className={clas==="Contact"? "active" : ""} >Contact</a>
             </nav>
         </header>
