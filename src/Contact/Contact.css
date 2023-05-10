@@ -75,3 +75,10 @@
 .input-field textarea:hover::before, .textarea-field input:hover::before{
     width: 100%;
 }
+
+.Msg-Form{
+    position: relative;
+    top: 1.5rem;
+    font-size: 15px;
+    color: var(--text-color);
+}

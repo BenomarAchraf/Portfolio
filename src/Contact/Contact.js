@@ -28,7 +28,7 @@ const Contact = ({setNavbar}) => {
           setHide(true);
           Hidefct();
         } else {
-          setConfirmer("Votre Msg a été envoyer avec succées ");
+          setConfirmer("Your message has been sent successfully");
           setHide(true);
           Hidefct();
           setNom("");
