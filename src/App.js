@@ -1,6 +1,5 @@
-import React , {useEffect , useState, CSSProperties} from 'react'
+import React , {useEffect , useState} from 'react'
 import './App.css';
-import Loading from './Loading/Loading';
 import Navbar from './Navbar/Navbar';
 import SectionH from './HomeSection/SectionH';
 import About from './About/About';
