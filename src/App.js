@@ -35,8 +35,9 @@ function App() {
         <About setNavbar={setNavbar}/>
         <Education setNavbar={setNavbar}/>
         <DevSkills setNavbar={setNavbar} />
-        <Contact setNavbar={setNavbar}/>
         <Projects setNavbar={setNavbar}/>
+        <Contact setNavbar={setNavbar}/>
+        
         
         <Footer />
          </div>
