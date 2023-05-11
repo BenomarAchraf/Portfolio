@@ -22,6 +22,8 @@
     margin: auto;
     gap: 5rem;
     padding-top:5rem ;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -189,10 +191,7 @@
     
 }
 
-#position-project{
-    position: relative;
-    left: 34.8%;
-}
+
 
 #Admin{
     color: #fefefe;

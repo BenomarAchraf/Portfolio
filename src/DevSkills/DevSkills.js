@@ -13,7 +13,7 @@ const DevSkills = ({setNavbar}) => {
 
         <div className='skills-row'>
             <div className='skills-column'>
-                <h3 className='title'>Langages</h3>
+                <h3 className='title'>Languages</h3>
                 <div className='Skills-box'>
                     <div className='skills-content1'>
                         <div className='Skill'>
