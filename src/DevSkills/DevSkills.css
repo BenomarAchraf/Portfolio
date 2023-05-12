@@ -44,6 +44,7 @@
 
 .skills-content1{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -157,4 +158,16 @@ box-icon{
     border-radius: .3rem;
     width: var(--i);
     background: var(--main-color);
+}
+
+@media screen and (max-width: 1122px) {
+    .skills-column{
+        flex: 1 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        
+    }
 }

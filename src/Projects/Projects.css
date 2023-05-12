@@ -212,3 +212,11 @@
     width: var(--i);
     background: var(--main-color);
 }
+
+@media screen and (max-width: 1122px){
+    .skills-row{
+        gap: 6rem;
+        
+    }
+}
+

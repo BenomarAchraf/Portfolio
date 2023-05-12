@@ -107,3 +107,12 @@
     top: 10rem;
     padding-bottom: 2rem;
 }
+@media screen and (max-width: 1122px) {
+    .education-content.educ{
+        position: relative;
+        top: 4rem;
+        padding-bottom: 0rem;}
+    .education-column{
+        margin-top: 4rem;
+    }
+}

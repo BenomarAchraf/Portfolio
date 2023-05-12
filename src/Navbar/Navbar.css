@@ -35,6 +35,40 @@
     font-size: 3.6rem;
     color: var(--text-color);
     cursor: pointer;
+    transition: .5s ;
     display: none;
 }
 
+@media screen and (max-width: 1122px) {
+    #menu-icon{
+        display: flex;
+        transition: .5s ;
+    }
+    #a16{
+        display: none;
+    }
+    #a15{
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 78px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        
+        padding-bottom: 20px;
+        transition: .5s;
+        background-color: var(--bg-color);
+    }
+
+    .navbar a{
+        width: 80%;
+        text-align: center;
+        padding-bottom: 7px;
+        margin-left: 0;
+        border-bottom: 5px solid var(--sc-bg-color) ;
+        transition: .3s;
+    }
+}

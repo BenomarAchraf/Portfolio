@@ -180,3 +180,22 @@ section{
 
 
 }
+
+@media screen and (max-width: 1122px) {
+    .Image-Achraf-size{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .03;
+        border: .7rem solid var(--main-color);
+    }
+    .Image-Achraf-Hover{
+        display: none;
+    }
+
+    .btn-box{
+        
+    }
+    
+}
